@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+    <!--    <FrameLayout-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="350dp"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:id="@+id/pause"-->
+    <!--        android:orientation="vertical">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="370dp"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:layout_weight="6"-->
+    <!--                android:background="@drawable/win"/>-->
+
+    <!--            <View-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="0dp"-->
+    <!--                android:layout_weight="0.5" />-->
+    <!--        </LinearLayout>-->
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center"-->
+    <!--            android:text="Pause"-->
+    <!--            android:textColor="@color/PuzzleText"-->
+    <!--            android:shadowRadius="20"-->
+    <!--            android:shadowColor="@color/black"-->
+    <!--            android:textSize="80dp"-->
+    <!--            android:textStyle="bold|italic"-->
+    <!--            android:layout_marginBottom="45dp"/>-->
+    <!--        <ImageView-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="100dp"-->
+    <!--            android:clickable="true"-->
+    <!--            android:background="@drawable/play"-->
+    <!--            android:layout_gravity="center|bottom"-->
+    <!--            android:id="@+id/play"/>-->
+    <!--        <ImageView-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="100dp"-->
+    <!--            android:background="@drawable/home2"-->
+    <!--            android:clickable="true"-->
+    <!--            android:layout_gravity="center|bottom"-->
+    <!--            android:layout_marginStart="100dp"-->
+    <!--            android:id="@+id/home1"/>-->
+    <!--        <ImageView-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="100dp"-->
+    <!--            android:layout_gravity="center|bottom"-->
+    <!--            android:clickable="true"-->
+    <!--            android:id="@+id/represh"-->
+    <!--            android:layout_marginEnd="100dp"-->
+    <!--            android:background="@drawable/restart"-->
+    <!--            android:focusable="true" />-->
+
+    <!--    </FrameLayout>-->
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/win"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginBottom="45dp"
+        android:shadowColor="@color/black"
+        android:shadowRadius="20"
+        android:text="Pause"
+        android:textColor="@color/PuzzleText"
+        android:textSize="60dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/play"
+        app:layout_constraintLeft_toLeftOf="@id/img"
+        app:layout_constraintRight_toRightOf="@id/img"
+        app:layout_constraintTop_toTopOf="@id/img"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/home2"
+        app:layout_constraintBottom_toBottomOf="@id/img"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toRightOf="@id/play"
+        app:layout_constraintRight_toRightOf="@id/img"/>
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/play"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_gravity="center|bottom"-->
+    <!--        android:background="@drawable/home"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@id/img"-->
+    <!--        app:layout_constraintDimensionRatio="1:1"-->
+    <!--        app:layout_constraintLeft_toRightOf="@id/restart"-->
+    <!--        app:layout_constraintRight_toLeftOf="@id/home"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/img"/>-->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toRightOf="@id/restart"
+        app:layout_constraintRight_toLeftOf="@id/home"
+        android:id="@+id/play"
+        android:background="@drawable/play"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintBottom_toBottomOf="@id/img"/>
+
+    <ImageView
+        android:id="@+id/restart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center|bottom"
+        android:background="@drawable/restart"
+        app:layout_constraintBottom_toBottomOf="@id/img"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/img"
+        app:layout_constraintRight_toLeftOf="@id/play" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

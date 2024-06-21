@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Button_Puzzle_15">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:shadowRadius">20</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>
